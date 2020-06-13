@@ -1,8 +1,7 @@
 $(document).ready(function(){
-    $('.reviews__slider').slick({
-        draggable: false,
-        prevArrow: '<button type="button" class="slick-prev"><img src="icons/arrow_left.png"</button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="icons/arrow_right.png"</button>'
+    $('.promo__slider').slick({
+        draggable: true,
+        arrows: false
     });
 
     $('.modal__close').on('click', function(){
