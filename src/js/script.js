@@ -1,8 +1,8 @@
 $(document).ready(function(){
-    $('.reviews__slider').slick({
-        draggable: false,
-        prevArrow: '<button type="button" class="slick-prev"><img src="icons/arrow_left.png"</button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="icons/arrow_right.png"</button>'
+    $('.issue__inner').slick({
+        // draggable: true,
+        prevArrow: '<button type="button" class="slick-prev"><img src="icons/prev_arrow.png"</button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="icons/next_arrow.png"</button>',
     });
 
     $('.modal__close').on('click', function(){
