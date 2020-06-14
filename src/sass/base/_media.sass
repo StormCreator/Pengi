@@ -10,6 +10,7 @@
         padding: 0px 20px 0 20px
     .cprengi__item
         width: 30%
+
 @media (max-width: 991px)
     .container
         max-width: 768px
@@ -59,7 +60,26 @@
     .issue__img
         padding: 0 20px
         width: 100%
-@media (max-width: 768px)
+@media (max-width: 767px)
+    .container
+        max-width: 567px
+    .footer
+        .footer__company_title
+            display: none
+        .company_descr
+            display: none
+        .footer__wrapper
+            flex-wrap: wrap
+        .footer__company
+            width: 100%
+            text-align: center
+        .footer__inner_wrap
+            width: 39%
+            flex-direction: column    
+        .footer__modules 
+            width: 59%
+        .footer__our 
+            margin-top: 40px
     .promo .wrap
         flex-direction: column
         justify-content: center
@@ -95,8 +115,20 @@
     .issue__tabs
         display: none
         width: 95%
-    .issue__tabs ul li
+    .issue__tabs 
+        ul 
+            li
         padding: 5px
+    .variants__item
+        width: 100%
+        padding-left: 30px
+    .left_cube
+        margin-right: 10px
+    .right_cube
+        margin-left: 10px
+    .variants__item-right
+        margin-right: 20px
+        padding: 0 25px 0 0
     .variants__item_title
         font-size: 17px
     .variants__item_text 
@@ -197,3 +229,5 @@
     @media (max-width: 320px)
         .variants__item-right
             width: 100%
+        width: 150px
+        font-size: 14px
