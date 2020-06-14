@@ -6,6 +6,13 @@ $(document).ready(function(){
               settings: {
                 arrows: false
               }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                arrows: false,
+                dots: true
+              }
             }
         ]
     });
