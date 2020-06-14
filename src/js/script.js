@@ -6,7 +6,18 @@ $(document).ready(function(){
     });
     $('.promo__slider').slick({
         draggable: true,
-        arrows: false
+        arrows: false,
     });
+
+    $('.header__flags').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        centerMode: false,
+        autoplay: true,
+        autoplaySpeed: 3000,    
+        speed: 1000
+      });
   });
           
