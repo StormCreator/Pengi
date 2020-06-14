@@ -13,7 +13,15 @@ $(document).ready(function(){
                 arrows: false,
                 dots: true
               }
+            },
+            {
+              breakpoint: 567,
+              settings: {
+                arrows: false,
+                dots: false
+              }
             }
+            
         ]
     });
     $('.promo__slider').slick({
@@ -29,7 +37,15 @@ $(document).ready(function(){
         centerMode: false,
         autoplay: true,
         autoplaySpeed: 3000,    
-        speed: 1000
+        speed: 1000,
+        responsive: [
+          {
+            breakpoint: 567,
+            settings: {
+              slidesToShow: 1
+            }
+          },
+      ]
       });
   });
           
