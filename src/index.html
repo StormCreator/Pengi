@@ -73,14 +73,19 @@
                 </div>
                 <div class="promo__navigation">
                     <nav>
-                        <ul>
-                            <li><a href="#">Главная</a></li>
-                            <li><a href="#">Модули</a></li>
-                            <li><a href="#">Отрасли</a></li>
-                            <li><a href="#">О Нас</a></li>
-                            <li><a href="#">Наши Обязательства</a></li>
+                        <ul class="menu">
+                            <li class="menu-item"><a href="#">Главная</a></li>
+                            <li class="menu-item"><a href="#">Модули</a></li>
+                            <li class="menu-item"><a href="#">Отрасли</a></li>
+                            <li class="menu-item"><a href="#">О Нас</a></li>
+                            <li class="menu-item"><a href="#">Наши Обязательства</a></li>
                         </ul>
                     </nav>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </div>
             <div class="promo__slider">
@@ -93,7 +98,7 @@
                             <span>PRENGI</span> - Платформа для прозрачного<br>
                             управления бизнесом
                         </div>
-                        <button class="promo__button">
+                        <button data-modal="call-me" class="promo__button">
                             Получить доступ
                         </button>
                     </div>
@@ -110,7 +115,7 @@
                             <span>PRENGI</span> - Платформа для прозрачного<br>
                             управления бизнесом
                         </div>
-                        <button class="promo__button">
+                        <button  class="promo__button" >
                             Получить доступ
                         </button>
                     </div>
@@ -276,7 +281,7 @@
         <div class="feed__descr">Приступить очень просто!<br>
             Нужно получить доступ и начать работу!</div>
         <form action="#" class="feed__form">
-            <button class="feed__button">связаться с нами</button>
+            <button class="feed__button" data-modal="call-me">связаться с нами</button>
         </form>
     </section>
 
@@ -341,6 +346,25 @@
             </div>
         </div>
     </footer>
+
+    <div class="overlay">
+        <div class="modal" id="call-me">
+            <div class="modal__close">&times;</div>
+            <div class="modal__title">
+                Мы перезвоним в течении минуты!
+            </div>
+            <form action="#" class="modal__form" id="modal-form">
+                <input type="tel" name="phone" placeholder="Ваш номер телефона...">
+                <button class="button">
+                    Перезвонить
+                </button>
+            </form>
+        </div>
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close">&times;</div>
+            Спасибо! С Вами свяжутся в течении минуты!
+        </div>
+    </div>
 
 
 
